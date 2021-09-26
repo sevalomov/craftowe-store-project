@@ -1,0 +1,380 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* Padding below the footer and lighter body text */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  /* font-size: 14px; */
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #212529;
+}
+a:hover {
+  color: inherit;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+  height: 32rem;
+  background: black;
+}
+
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  opacity: 0.4;
+  background: black;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+
+.image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.card {
+  transition: all .3s ease-out;
+}
+
+.marketing .card:hover {
+  transform: translateY(30px);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.btn-buy {
+  padding: 6px;
+  border-radius: 50px;
+  width: 37px;
+  height: 37px;
+  font-size: 15px;
+  transform: scale(0);
+  transition: all .3s ease-out;
+}
+
+.thumbnail {
+  transition: all .3s ease-out;
+  overflow: hidden;
+}
+
+.card:hover .btn-buy {
+  transform: scale(1);
+}
+
+.img-ga-1 {
+  opacity: 1;
+  transition: all .3s ease-out;
+}
+
+.img-ga-2 {
+  opacity: 0;
+  transition: all .3s ease-out;
+}
+
+.card:hover .img-ga-1 {
+  opacity: 0;
+}
+
+.card:hover .img-ga-2 {
+  opacity: 1;
+}
+
+/* .card:hover .thumbnail {
+  transform: translateY(-8px);
+
+} */
+
+.heart-like {
+  position: absolute;
+  top: -30px;
+  right: 1px;
+  transition: all .3s ease-out;
+  font-size: 20px;
+  transform: scale(0);
+}
+
+.reating-product {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  transition: all .3s ease-out;
+  font-size: 20px;
+  top: -30px;
+  transform: scale(0);
+}
+
+.reating-product span {
+  font-size: 10px;
+  opacity: .6;
+}
+
+.card:hover .heart-like {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.card:hover .reating-product {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.card-price {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.sale {
+  background-color: #3c9562;
+  padding: 0px 10px;
+  color: white;
+  box-shadow: 0.19rem 0.19rem #9fe0bb;
+}
+
+.sale-cwot {
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.sale-cwot .monety {
+  font-size: 12px;
+}
+
+.monety {
+  font-size: 15px;
+}
+
+.width-600 {
+  max-width: 600px;
+}
+
+.rounded-50 {
+  border-radius: 50px;
+}
+
+.nav-span {
+  font-size: 27px;
+}
+
+.nav-link {
+  font-weight: 600;
+  line-height: 60px;
+  /* padding-right: 10px; */
+  padding: 0px 15px 0px 15px;
+  font-size: 13px;
+}
+
+.category-modal .modal-dialog-centered {
+  margin: 0px;
+}
+
+.category-modal .modal-content {
+  height: 100vh;
+  border: none;
+  border-radius: 0px;
+}
+
+.category-modal .modal-header {
+  justify-content: flex-start;
+}
+
+.category-modal .close-cat {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  /* background: #f1f1f1; */
+  padding: 4px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.category-modal .modal-header {
+  border: none;
+}
+
+.category-modal .card-header {
+  padding: 0px 0px 10px 43px;
+  margin-bottom: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.category-modal h4 {}
+
+.category-modal .card {
+  border: none
+}
+
+.category-modal .nav-link {
+  line-height: 35px;
+  padding: 0;
+  padding: 7px 12px;
+  font-size: 13px;
+  line-height: 25px;
+  display: inline-block;
+  background: whitesmoke;
+  margin: 0px 8px 8px 0px;
+  border-radius: 50px;
+  transition: all .3s ease-out;
+}
+
+.category-modal .nav-link:hover {
+  transform: scale(1.1);
+}
+
+.modal.left.fade.show .modal-dialog {
+  left: 0;
+  cursor: auto;
+}
+
+.modal.left .modal-dialog {
+  position: fixed;
+  margin: auto;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content {
+  height: 100%;
+  width: 450px;
+  overflow-y: auto;
+}
+
+.modal.left.fade .modal-dialog {
+  left: -1320px;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+  transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog {
+  left: 0;
+}
+
+.logo-text {
+  color: #3D9563;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.all-link-produkt {
+  border-radius: 50px;
+  font-size: 12px;
+  transition: all .3s ease-out;
+  font-weight: 600;
+  cursor: pointer
+}
+
+.fa-paper-plane, .fa-arrow-right {
+  transition: all .3s ease-out;
+}
+
+.all-link-produkt:hover .fa-paper-plane, .all-link-produkt:hover .fa-arrow-right {
+  padding-left: 20px !important;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #3c9562;
+  border-color: #3c9562;
+}
+
+.text-category {
+  line-height: 1.571;
+  font-size: .875rem;
+}
+
+.pov-g {
+  background-color: whitesmoke;
+  padding: 4px 11px 4px 11px;
+  border-radius: 50px;
+  cursor: pointer;
+  /* position: sticky; */
+  /* bottom: 20px; */
+}
+
+
+
+
+.pov-g-ins {
+  transition: all .3s ease-out;
+  transform: scale(0);
+  font-size: 0;
+}
+
+.pov-g:hover .pov-g-ins {
+  font-size: 14px;
+  transform: scale(1);
+  padding-right: 12px;
+}
+
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1450px;
+    max-width: 90%;
+  }
+}

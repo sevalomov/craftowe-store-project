@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.80.0">
+  <title>Carousel Template · Bootstrap v4.6</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+
+
+  <!-- Custom styles for this template -->
+
+</head>
+
+<body>
+
+
+
+  <!-- Modal -->
+  <div class="modal left fade category-modal" id="categoryModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="categoryModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content p-3">
+        <div class="modal-header">
+          <span data-dismiss="modal" class="close-cat" aria-label="Close"><i class="fas fa-arrow-left"></i></span>
+
+          <h5 class="modal-title" id="categoryModalLongTitle">Wszystkie kategorie</h5>
+        </div>
+        <div class="modal-body pt-0">
+
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h4 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  <img width="40" src="https://craftowe.pl/wp-content/uploads/2021/02/Biżuteria.png"
+                    class="menu-image menu-image-title-after" alt="" loading="lazy">
+                  Bizuteria
+
+                </h4>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body p-0 pl-5">
+                  <nav class="nav ">
+                    <a class="nav-link " href="#">Ślubna</a>
+                    <a class="nav-link" href="#">Dziecięca</a>
+                    <a class="nav-link" href="#">Kolczyki</a>
+                    <a class="nav-link " href="#">Nausznice</a>
+                  </nav>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h4 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  <img width="40" src="https://craftowe.pl/wp-content/uploads/2021/02/Ceramika.png"
+                    class="menu-image menu-image-title-after" alt="" loading="lazy">
+                  Ceramika
+                </h4>
+              </div>
+              <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body p-0 pl-5">
+                  <nav class="nav ">
+                    <a class="nav-link " href="#">Active</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link " href="#">Disabled</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h4 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  <img width="40" src="https://craftowe.pl/wp-content/uploads/2021/02/Dla-dzieci.png"
+                    class="menu-image menu-image-title-after" alt="" loading="lazy">
+                  Dla dzieci
+                </h4>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body p-0 pl-5">
+                  <nav class="nav">
+                    <a class="nav-link " href="#">Active</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link " href="#">Disabled</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="container p-0">
+
+    <ul class="nav ">
+      <li class="logo nav-item "><a class="nav-link active" href="#"><img src="./img/logo.png" class="img" alt="..."
+            style="width:43px"><span class="logo-text">craftowe<span style="color: #a9dcbf;;">.pl</span></span></a>
+      </li>
+      <li class="logo nav-item"><a class="nav-link active" data-toggle="modal" data-target="#categoryModalCenter"
+          href="#">Kategorie</a></li>
+      <li class="logo nav-item"><a class="nav-link active" href="#">Produkty</a></li>
+      <li class="logo nav-item mr-auto"><a class="nav-link active" href="#">Nowości</a></li>
+
+
+
+      <li class="nav-item text-center ">
+        <a class="nav-link" href="#"><span class="nav-span"><svg focusable="false"
+              class="svg-icon  hnf-svg-icon hnf-svg-bag-default hnf-btn__icon" fill="#212529" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.9994 4h-.5621l-.2922.4802-3.357 5.517h-5.069l.3107 1.2425 1.6212 6.4851c.334 1.3355 1.5339 2.2724 2.9105 2.2724h10.8769c1.3766 0 2.5765-.9369 2.9104-2.2724l1.6213-6.4851.3106-1.2425h-5.0695l-3.3574-5.517L13.5618 4h-2.5624zm3.8707 5.9972L12.4376 6h-.8761L9.1292 9.9972h5.7409zm-9.2787 7.2425-1.3106-5.2425h15.4384l-1.3106 5.2425a1 1 0 0 1-.9701.7575H6.5615a1 1 0 0 1-.97-.7575z">
+              </path>
+            </svg></span></a>
+      </li>
+      <li class="nav-item text-center ">
+        <a class="nav-link" href="#"><span class="nav-span"><svg focusable="false"
+              class="svg-icon  hnf-svg-icon hnf-btn__icon" width="24" height="24" fill="#212529" viewBox="0 0 24 24"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.336 5.52055C14.2336 3.62376 17.3096 3.62401 19.2069 5.52129C20.2067 6.52115 20.6796 7.85005 20.6259 9.15761C20.6151 12.2138 18.4184 14.8654 16.4892 16.6366C15.4926 17.5517 14.5004 18.2923 13.7593 18.8036C13.3879 19.0598 13.0771 19.2601 12.8574 19.3973C12.7475 19.466 12.6601 19.519 12.5992 19.5555C12.5687 19.5737 12.5448 19.5879 12.5279 19.5978L12.5079 19.6094L12.502 19.6129L12.5001 19.614C12.5001 19.614 12.4989 19.6147 11.9999 18.748C11.501 19.6147 11.5005 19.6144 11.5005 19.6144L11.4979 19.6129L11.4919 19.6094L11.472 19.5978C11.4551 19.5879 11.4312 19.5737 11.4007 19.5555C11.3397 19.519 11.2524 19.466 11.1425 19.3973C10.9227 19.2601 10.612 19.0598 10.2405 18.8036C9.49947 18.2923 8.50726 17.5517 7.51063 16.6366C5.58146 14.8654 3.38477 12.2139 3.37399 9.15765C3.32024 7.85008 3.79314 6.52117 4.79301 5.52129C6.69054 3.62376 9.76704 3.62376 11.6646 5.52129L11.9993 5.856L12.3353 5.52129L12.336 5.52055ZM11.9999 18.748L11.5005 19.6144L11.9999 19.9019L12.4989 19.6147L11.9999 18.748ZM11.9999 17.573C12.1727 17.462 12.384 17.3226 12.6236 17.1573C13.3125 16.6821 14.2267 15.9988 15.1366 15.1634C17.0157 13.4381 18.6259 11.2919 18.6259 9.13506V9.11213L18.627 9.08922C18.6626 8.31221 18.3844 7.52727 17.7926 6.9355C16.6762 5.81903 14.866 5.81902 13.7495 6.9355L13.7481 6.93689L11.9965 8.68166L10.2504 6.9355C9.13387 5.81903 7.3237 5.81903 6.20722 6.9355C5.61546 7.52727 5.33724 8.31221 5.3729 9.08922L5.37395 9.11213V9.13507C5.37395 11.2919 6.98418 13.4381 8.86325 15.1634C9.77312 15.9988 10.6874 16.6821 11.3762 17.1573C11.6159 17.3226 11.8271 17.462 11.9999 17.573Z">
+              </path>
+            </svg></span></a>
+      </li>
+      <li class="nav-item text-center ">
+        <a class="nav-link" href="#"><span class="nav-span"><svg focusable="false" fill="#212529"
+              class="svg-icon  hnf-svg-icon hnf-btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.6724 6.4678c.2734-.2812.6804-.4707 1.3493-.4707.3971 0 .705.0838.9529.2225.241.1348.4379.3311.5934.6193l.0033.006c.1394.2541.237.6185.237 1.1403 0 .7856-.2046 1.2451-.4796 1.5278l-.0048.005c-.2759.2876-.679.4764-1.334.4764-.3857 0-.6962-.082-.956-.2241-.2388-.1344-.4342-.3293-.5888-.6147-.1454-.275-.2419-.652-.2419-1.1704 0-.7902.2035-1.2442.4692-1.5174zm1.3493-2.4717c-1.0834 0-2.054.3262-2.7838 1.0766-.7376.7583-1.0358 1.781-1.0358 2.9125 0 .7656.1431 1.483.4773 2.112l.0031.0058c.3249.602.785 1.084 1.3777 1.4154l.0062.0035c.5874.323 1.2368.4736 1.9235.4736 1.0818 0 2.0484-.3333 2.7755-1.0896.7406-.7627 1.044-1.786 1.044-2.9207 0-.7629-.1421-1.4784-.482-2.0996-.3247-.6006-.7844-1.0815-1.376-1.4125-.5858-.3276-1.2388-.477-1.9297-.477zM6.4691 16.8582c.2983-.5803.7228-1.0273 1.29-1.3572.5582-.3191 1.2834-.5049 2.2209-.5049h4.04c.9375 0 1.6626.1858 2.2209.5049.5672.3299.9917.7769 1.29 1.3572.3031.5896.4691 1.2936.4691 2.1379v1h2v-1c0-1.1122-.2205-2.1384-.6904-3.0523a5.3218 5.3218 0 0 0-2.0722-2.1769c-.9279-.5315-2.0157-.7708-3.2174-.7708H9.98c-1.1145 0-2.2483.212-3.2225.7737-.8982.5215-1.5928 1.2515-2.0671 2.174C4.2205 16.8577 4 17.8839 4 18.9961v1h2v-1c0-.8443.166-1.5483.4691-2.1379z">
+              </path>
+            </svg></span></a>
+      </li>
+
+    </ul>
+  </header>
+  <main role="main">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.pexels.com/photos/4672246/pexels-photo-4672246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            class="d-block w-100 img" alt="...">
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Nowe Niższe Ceny</h1>
+              <p>Nowa Niższa Cena, ta sama jakość. Sprawdź.</p>
+              <p><a class="btn btn-lg btn-success rounded-50" href="#">Sprawdz oferty</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+
+          <img
+            src="https://images.pexels.com/photos/796580/pexels-photo-796580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            class="d-block w-100 img" alt="...">
+
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>EKO Produkty</h1>
+              <p>Produkty naszych twórców powstają z dużą dbałością o szczegóły.</p>
+              <p><a class="btn btn-lg btn-success rounded-50" href="#">Sprawdz oferty</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img 
+            src="https://images.pexels.com/photos/7292893/pexels-photo-7292893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            class="d-block w-100 img" alt="...">
+
+
+          <div class="container">
+            <div class="carousel-caption ">
+              <h1>Unikatowe produkty​</h1>
+              <p>Znajdziesz tu niepowtarzalne produkty rzemieślnicze.</p>
+              <p><a class="btn btn-lg btn-success rounded-50" href="#">Sprawdz oferty</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <h3 class="">Garnitur</h3>
+      <div class="d-flex justify-content-between align-items-end pb-3 ">
+        <p class="width-600 text-category m-0">Życie w zdrowszy i bardziej przyjazny środowisku sposób jest
+          łatwiejsze i bardziej
+          przystępne niż kiedykolwiek wcześniej.</p>
+        <a class="all-link-produkt">Wszystkie produkty <i class="pl-2 fas fa-arrow-right"></i></a>
+      </div>
+      <div class="row">
+
+
+        <div class="col-12 col-md-4 col-xl-3 p-3 pt-4">
+          <div class="card border-0">
+            <a class="reating-product" href="#qwe">4.6<span>/5 (24)</span></a>
+            <a class="heart-like" href="#qwe"><i class="far fa-heart"></i></a>
+            <a href="#" class="thumbnail">
+              <div class="image">
+                <img
+                  src="https://images.pexels.com/photos/4210337/pexels-photo-4210337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-1" />
+                <img
+                  src="https://images.pexels.com/photos/4210339/pexels-photo-4210339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-2" />
+              </div>
+            </a>
+            <div class="card-body p-0 pt-3">
+              <h6 class="card-title m-0">BAGGANÄS</h6>
+              <p class="card-text m-0"> Moda </p>
+              <div class="block-proce d-flex mt-2 ">
+                <p class="card-price m-0 "> 199.-</p>
+                <a href="#" class="btn-buy btn btn-success ml-auto d-block"><i class="fas fa-shopping-basket"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-4 col-xl-3 p-3 pt-4">
+          <div class="card border-0">
+            <a class="reating-product" href="#qwe">4.6<span>/5 (24)</span></a>
+            <a class="heart-like" href="#qwe"><i class="far fa-heart"></i></a>
+            <a href="#" class="thumbnail">
+              <div class="image">
+                <img
+                  src="https://images.pexels.com/photos/2633398/pexels-photo-2633398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-1" />
+                <img
+                  src="https://images.pexels.com/photos/2616171/pexels-photo-2616171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-2" />
+              </div>
+            </a>
+            <div class="card-body p-0 pt-3">
+              <h6 class="card-title m-0">BAGGANÄS</h6>
+              <p class="card-text m-0"> Moda </p>
+              <div class="block-proce d-flex mt-2 ">
+                <p class="card-price sale m-0 "> <span class="sale-cwot">24,<span class="monety">99</span></span>
+                  20,<span class="monety">-</span> </p>
+                <a href="#" class="btn-buy btn btn-success ml-auto d-block"><i class="fas fa-shopping-basket"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-4 col-xl-3 p-3 pt-4">
+          <div class="card border-0">
+            <a class="reating-product" href="#qwe">4.6<span>/5 (24)</span></a>
+            <a class="heart-like" href="#qwe"><i class="far fa-heart"></i></a>
+            <a href="#" class="thumbnail">
+              <div class="image">
+                <img src="https://images.pexels.com/photos/5490374/pexels-photo-5490374.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+                  class=" img img-responsive full-width img-ga-1" />
+                <img
+                  src="https://images.pexels.com/photos/5987220/pexels-photo-5987220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-2" />
+              </div>
+            </a>
+            <div class="card-body p-0 pt-3">
+              <h6 class="card-title m-0">BAGGANÄS</h6>
+              <p class="card-text m-0"> Moda </p>
+              <div class="block-proce d-flex mt-2 ">
+                <p class="card-price m-0 "> 199.-</p>
+                <a href="#" class="btn-buy btn btn-success ml-auto d-block"><i class="fas fa-shopping-basket"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-4 col-xl-3 p-3 pt-4">
+          <div class="card border-0">
+            <a class="reating-product" href="#qwe">4.6<span>/5 (24)</span></a>
+            <a class="heart-like" href="#qwe"><i class="far fa-heart"></i></a>
+            <a href="#" class="thumbnail">
+              <div class="image">
+                <img
+                  src="https://images.pexels.com/photos/4210337/pexels-photo-4210337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-1" />
+                <img
+                  src="https://images.pexels.com/photos/4210339/pexels-photo-4210339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-2" />
+              </div>
+            </a>
+            <div class="card-body p-0 pt-3">
+              <h6 class="card-title m-0">BAGGANÄS</h6>
+              <p class="card-text m-0"> Moda </p>
+              <div class="block-proce d-flex mt-2 ">
+                <p class="card-price m-0 "> 199.-</p>
+                <a href="#" class="btn-buy btn btn-success ml-auto d-block"><i class="fas fa-shopping-basket"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <h3 class="mt-5">BIO</h3>
+      <div class="d-flex justify-content-between align-items-end pb-3 ">
+        <p class="width-600 text-category m-0">Życie w zdrowszy i bardziej przyjazny środowisku sposób jest
+          łatwiejsze i bardziej
+          przystępne niż kiedykolwiek wcześniej.</p>
+        <a class="all-link-produkt">Wszystkie produkty BIO<i class="pl-2 fas fa-arrow-right"></i></a>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4 col-xl-3 p-3 pt-4">
+          <div class="card border-0">
+            <a class="reating-product" href="#qwe">4.6<span>/5 (24)</span></a>
+            <a class="heart-like" href="#qwe"><i class="far fa-heart"></i></a>
+            <a href="#" class="thumbnail">
+              <div class="image">
+                <img
+                  src="https://images.pexels.com/photos/4210337/pexels-photo-4210337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-1" />
+                <img
+                  src="https://images.pexels.com/photos/4210339/pexels-photo-4210339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-2" />
+              </div>
+            </a>
+            <div class="card-body p-0 pt-3">
+              <h6 class="card-title m-0">BAGGANÄS</h6>
+              <p class="card-text m-0"> Moda </p>
+              <div class="block-proce d-flex mt-2 ">
+                <p class="card-price sale m-0 "> <span class="sale-cwot">24,<span class="monety">99</span></span>
+                  20,<span class="monety">-</span> </p>
+                <a href="#" class="btn-buy btn btn-success ml-auto d-block"><i class="fas fa-shopping-basket"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 p-3 pt-4">
+          <div class="card border-0">
+            <a class="reating-product" href="#qwe">4.6<span>/5 (24)</span></a>
+            <a class="heart-like" href="#qwe"><i class="far fa-heart"></i></a>
+            <a href="#" class="thumbnail">
+              <div class="image">
+                <img
+                  src="https://images.pexels.com/photos/4210337/pexels-photo-4210337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-1" />
+                <img
+                  src="https://images.pexels.com/photos/4210339/pexels-photo-4210339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-2" />
+              </div>
+            </a>
+            <div class="card-body p-0 pt-3">
+              <h6 class="card-title m-0">BAGGANÄS</h6>
+              <p class="card-text m-0"> Moda </p>
+              <div class="block-proce d-flex mt-2 ">
+                <p class="card-price sale m-0 "> <span class="sale-cwot">24,<span class="monety">99</span></span>
+                  20,<span class="monety">-</span> </p>
+                <a href="#" class="btn-buy btn btn-success ml-auto d-block"><i class="fas fa-shopping-basket"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 p-3 pt-4">
+          <div class="card border-0">
+            <a class="reating-product" href="#qwe">4.6<span>/5 (24)</span></a>
+            <a class="heart-like" href="#qwe"><i class="far fa-heart"></i></a>
+            <a href="#" class="thumbnail">
+              <div class="image">
+                <img
+                  src="https://images.pexels.com/photos/4210337/pexels-photo-4210337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-1" />
+                <img
+                  src="https://images.pexels.com/photos/4210339/pexels-photo-4210339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-2" />
+              </div>
+            </a>
+            <div class="card-body p-0 pt-3">
+              <h6 class="card-title m-0">BAGGANÄS</h6>
+              <p class="card-text m-0"> Moda </p>
+              <div class="block-proce d-flex mt-2 ">
+                <p class="card-price  m-0 ">242,-</p>
+                <a href="#" class="btn-buy btn btn-success ml-auto d-block"><i class="fas fa-shopping-basket"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 p-3 pt-4">
+          <div class="card border-0">
+            <a class="reating-product" href="#qwe">4.6<span>/5 (24)</span></a>
+            <a class="heart-like" href="#qwe"><i class="far fa-heart"></i></a>
+            <a href="#" class="thumbnail">
+              <div class="image">
+                <img
+                  src="https://images.pexels.com/photos/4210337/pexels-photo-4210337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-1" />
+                <img
+                  src="https://images.pexels.com/photos/4210339/pexels-photo-4210339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  class="img img-responsive full-width img-ga-2" />
+              </div>
+            </a>
+            <div class="card-body p-0 pt-3">
+              <h6 class="card-title m-0">BAGGANÄS</h6>
+              <p class="card-text m-0"> Moda </p>
+              <div class="block-proce d-flex mt-2 ">
+                <p class="card-price  m-0 "> 24,-</p>
+                <a href="#" class="btn-buy btn btn-success ml-auto d-block"><i class="fas fa-shopping-basket"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="container-fluid py-5 mt-5" style="background-color: #fcecd2;">
+      <div class="container text-center">
+        <h2 style="font-weight: 500; padding-bottom: 30px;">Dlaczego warto kupować <b>craft?</b></h2>
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-4 py-3">
+            <h2>Wysoka jakość</h2>
+            <p>Produkty naszych twórców powstają z dużą dbałością o szczegóły. Często ręcznie robione cieszą
+              użytkowników
+              wysoką jakością przez lata.</p>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 py-3">
+            <h2>Wspieranie polskich przedsiębiorstw</h2>
+            <p>Kupując na craftowe.pl wspierasz polskich twórców craftowych. Przyczyniasz się do ich rozwoju, a także do
+              rozwoju samego craftu.</p>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 py-3">
+            <h2>Tworzone z pasją</h2>
+            <p>Każdego z naszych twórców cechuje pasja do swojego rzemiosła. Dzięki temu spod ich rąk wychodzą jedyne w
+              swoim rodzaju przedmioty.</p>
+          </div>
+          <div class="col-12 col-md-6 py-3">
+            <h2>Atrakcyjne ceny</h2>
+            <p>Ceny są gwarancją wysokiej jakości każdego produktów.</p>
+          </div>
+          <div class="col-12 col-md-6 py-3">
+            <h2>Unikatowe produkty​</h2>
+            <p>Znajdziesz tu niepowtarzalne produkty rzemieślnicze. Każdy z twórców zajmuje unikatową niszę, a
+              craftowe.pl jest platformą, która te nisze przedstawia.</p>
+          </div>
+        </div>
+        <h3 style="font-weight: 400;">Masz pytanie? My mamy odpowiedzi.</h3>
+        <p class="all-link-produkt mt-5"
+          style="display: inline-block; border-color: #212528; border-width: 2px; margin:15px 0px;">Napisz do centrum
+          pomocy<i class="pl-3 fas fa-paper-plane"></i></p>
+      </div>
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="container mt-5 mb-5">
+      <div class="float-right pov-g" href="#"><span class="fas pov-g-ins">Powrót do góry</span><i
+          class="fas fa-angle-up"></i></div>
+      <p style="max-width: 400px;">Ubrania, biżuteria, eko-kosmetyki, przedmioty codziennego użytku to tylko kilka z licznych propozycji
+        craftowe.pl. To tu spotykają się ludzie z pasją do craftu!</p>
+        <p><i style=" font-size: 23px;"  class="fab fa-facebook pr-3 "></i>  <i <i style=" font-size: 25px;" class="fab fa-instagram"></i></p>
+      <p>2021 Craftowe &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Contact</a></p>
+    </footer>
+  </main>
+
+  <script src="https://kit.fontawesome.com/e97a6a9c0b.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
